@@ -1,13 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 import './index.css';
 import App from './App';
+import Counter from './pages/Counter/Counter';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <Router>
+      <Routes>
+        <Route exact path='/' Component={App} />
+        <Route path='/counter' Component={Counter}/>
+      </Routes>
+    </Router>
   </React.StrictMode>
 );
 

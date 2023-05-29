@@ -37,34 +37,3 @@
     transform: rotate(360deg);
   }
 }
-
-.counter {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  row-gap: 1rem;
-  flex-direction: column;
-}
-
-h1 {
-  text-align: center;
-}
-.counter_output{
-  font-size: 2rem;
-}
-button{
-  font-size: 2rem;
-  margin: 0.25rem;
-  padding: auto;
-}
-body {
-  background: linear-gradient(to right, #56ccf2, #2f80ed);
-  background-repeat: no-repeat;
-  height: 100vh;
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
